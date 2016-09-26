@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/ic_settings_applications_black_48dp"
+            android:title="General" />
+
+        <item android:id="@+id/nav_switch"
+            app:actionLayout="@layout/switch_nightmode"
+            android:icon="@drawable/ic_brightness_4_white_36dp"
+            android:title="Night Mode" />
+
+        <item android:id="@+id/v_switch"
+            app:actionLayout="@layout/switch_vibrate"
+            android:icon="@drawable/ic_hdr_weak_black_48dp"
+            android:title="Vibration" />
+        
+        <item android:id="@+id/drop_down2"
+            android:icon="@drawable/ic_library_music_black_48dp"
+            android:title="WakeUp Song" />
+
+    </group>
+    <item android:title="Support"
+        android:id="@+id/subitems">
+        <menu>
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/ic_bug_report_black_48dp"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/help"
+                android:title="Help " />
+
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_info_black_48dp"
+                android:title="About" />
+
+        </menu>
+    </item>
+</menu>

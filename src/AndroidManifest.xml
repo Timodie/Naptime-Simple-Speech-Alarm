@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tim.myapplication" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo96"
+        android:label="NapTime"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".First"
+            android:label="NapTime"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Naptime"
+            android:label="@string/title_activity_first"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RingTone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".licenses"
+            android:label="@string/title_activity_licenses" >
+        </activity>
+        <activity
+            android:name=".MyIntro"
+            android:screenOrientation="portrait" >
+        </activity>
+        <service
+            android:name=".CheckVersion" ></service>
+
+        <service android:name=".ForegroundService" >
+        </service>
+
+    </application>
+
+</manifest>

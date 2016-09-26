@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--get focus so edittext will not autofoucus-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:background="#8BC34A"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.tim.myapplication.Info">
+
+     <!--toolbar part-->
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/tool_bar_info"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="#8BC34A"
+        app:theme="@style/AppTheme"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Settings"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title_Info" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:hint="Your name"
+        android:maxLines="1"
+        android:id="@+id/editText"
+        android:nextFocusUp="@id/editText"
+        android:nextFocusLeft="@id/editText"
+        app:met_clearButton="true"
+        app:met_floatingLabel="normal"
+        app:met_baseColor="#007688"
+        app:met_primaryColor="#2196F3"
+        app:met_textColor="@color/black"
+        app:met_textColorHint="#33ff0000"
+        app:met_errorColor="#ddaa00"
+        app:met_typeface="Raleway-Regular.ttf"
+        app:met_helperTextColor="#795548"
+        app:met_underlineColor="#03A9F4"
+        app:met_floatingLabelTextColor="#795548"
+        android:layout_below="@+id/tool_bar_info"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Wakeup Message"
+        android:maxLines="1"
+        android:id="@+id/editwkupmsg"
+        android:nextFocusUp="@id/editwkupmsg"
+        android:nextFocusLeft="@id/editwkupmsg"
+        app:met_clearButton="true"
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="#007688"
+        app:met_primaryColor="#2196F3"
+        app:met_textColor="@color/black"
+        app:met_textColorHint="#33ff0000"
+        app:met_errorColor="#ddaa00"
+        app:met_typeface="Raleway-Regular.ttf"
+        app:met_helperTextColor="#795548"
+        app:met_underlineColor="#03A9F4"
+        app:met_floatingLabelTextColor="#795548"
+        android:layout_below="@+id/setButton"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Weather Location"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:layout_below="@+id/setButton2"
+        android:id="@+id/editplace"
+        android:nextFocusUp="@id/editplace"
+        android:nextFocusLeft="@id/editplace"
+        app:met_singleLineEllipsis="true"
+        app:met_clearButton="true"
+        app:met_helperText="eg. NewYork NY US"
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="#007688"
+        app:met_primaryColor="#2196F3"
+        app:met_textColor="@color/black"
+        app:met_textColorHint="#33ff0000"
+        app:met_errorColor="#ddaa00"
+        app:met_typeface="Raleway-Regular.ttf"
+        app:met_helperTextColor="#795548"
+        app:met_underlineColor="#03A9F4"
+        app:met_floatingLabelTextColor="#000000"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:hint="Location(City State Country)"-->
+        <!--android:textColorHint="#8BC34A"-->
+        <!--android:ems="12"-->
+        <!--android:id="@+id/editplace"-->
+        <!--android:maxLength="30"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--textfield part-->
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:id="@+id/view">-->
+
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:hint="What's your name ?"-->
+            <!--android:ems="10"-->
+            <!--android:textColorHint="#8BC34A"-->
+            <!--android:id="@+id/editText"-->
+            <!--android:nextFocusUp="@id/editText"-->
+            <!--android:nextFocusLeft="@id/editText"-->
+            <!--android:layout_below="@+id/tool_bar_info"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/wkupmsg"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true">-->
+        <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:hint="Wakeup Message"-->
+            <!--android:textColorHint="#8BC34A"-->
+            <!--android:ems="10"-->
+            <!--android:id="@+id/editwkupmsg"-->
+            <!--android:maxLength="30"-->
+            <!--android:layout_above="@+id/setButton2"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+<!--</android.support.design.widget.TextInputLayout>>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/place"
+        android:layout_below="@+id/setButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--setbutton-->
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setButton"
+        android:src="@drawable/ic_action_accept"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setButton2"
+        android:src="@drawable/ic_action_accept"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/editwkupmsg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setButton3"
+        android:src="@drawable/ic_action_accept"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/editplace"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>

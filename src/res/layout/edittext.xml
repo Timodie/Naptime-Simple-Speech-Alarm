@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/inputtime">
+
+        <!--textfield part-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter time"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/title"/>
+
+
+        <!--textfield part-->
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Hour(s)"
+            android:inputType="number"
+            android:id="@+id/editText"
+            android:gravity="center"
+            android:nextFocusUp="@id/editText"
+            android:nextFocusLeft="@id/editText"
+            android:layout_below="@+id/tool_bar_info"
+            app:met_maxCharacters="2"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="#007688"
+            app:met_primaryColor="#2196F3"
+            app:met_textColor="@color/black"
+            app:met_textColorHint="#33ff0000"
+            app:met_errorColor="#ddaa00"
+            app:met_typeface="Raleway-Regular.ttf"
+            app:met_helperTextColor="#795548"
+            app:met_underlineColor="#03A9F4"
+            app:met_floatingLabelTextColor="#795548"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_gravity="center_horizontal" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Minute(s)"
+            android:inputType="number"
+            android:id="@+id/editText2"
+            android:gravity="center"
+            android:nextFocusUp="@id/editText2"
+            android:nextFocusLeft="@id/editText2"
+            android:layout_below="@+id/editText"
+            app:met_maxCharacters="2"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="#007688"
+            app:met_primaryColor="#2196F3"
+            app:met_textColor="@color/black"
+            app:met_textColorHint="#33ff0000"
+            app:met_errorColor="#ddaa00"
+            app:met_typeface="Raleway-Regular.ttf"
+            app:met_helperTextColor="#795548"
+            app:met_underlineColor="#03A9F4"
+            app:met_floatingLabelTextColor="#795548"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_gravity="center_horizontal" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Second(s)"
+            android:inputType="number"
+            android:id="@+id/editText3"
+            android:gravity="center"
+            android:nextFocusUp="@id/editText3"
+            android:nextFocusLeft="@id/editText3"
+            android:layout_below="@+id/editText2"
+            app:met_maxCharacters="2"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="#007688"
+            app:met_primaryColor="#2196F3"
+            app:met_textColor="@color/black"
+            app:met_textColorHint="#33ff0000"
+            app:met_errorColor="#ddaa00"
+            app:met_typeface="Raleway-Regular.ttf"
+            app:met_helperTextColor="#795548"
+            app:met_underlineColor="#03A9F4"
+            app:met_floatingLabelTextColor="#795548"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:layout_gravity="center_horizontal" />
+
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/view">-->
+
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="number"-->
+                <!--android:hint="Hour(s)"-->
+                <!--android:ems="10"-->
+                <!--android:textColorHint="#8BC34A"-->
+                <!--android:id="@+id/editText"-->
+                <!--android:nextFocusUp="@id/editText"-->
+                <!--android:nextFocusLeft="@id/editText"-->
+                <!--android:layout_below="@+id/tool_bar_info"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/view2">-->
+
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="number"-->
+                <!--android:hint="Minute(s)"-->
+                <!--android:ems="10"-->
+                <!--android:textColorHint="#8BC34A"-->
+                <!--android:id="@+id/editText2"-->
+                <!--android:nextFocusUp="@id/editText"-->
+                <!--android:nextFocusLeft="@id/editText"-->
+                <!--android:layout_below="@+id/tool_bar_info"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+        <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:id="@+id/view3">-->
+
+            <!--<EditText-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="number"-->
+                <!--android:hint="Second(s)"-->
+                <!--android:ems="10"-->
+                <!--android:textColorHint="#8BC34A"-->
+                <!--android:id="@+id/editText3"-->
+                <!--android:nextFocusUp="@id/editText"-->
+                <!--android:nextFocusLeft="@id/editText"-->
+                <!--android:layout_below="@+id/tool_bar_info"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weather Details"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif medium"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/textView9"
+        android:layout_gravity="center_horizontal" />
+
+    <WebView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/webView"
+        android:padding="0dp"
+        android:paddingRight="0dp"
+        android:scrollbars="none"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <!--<View-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:padding="30dp"-->
+        <!--android:layout_width="128dp"-->
+        <!--android:layout_height="128dp" />-->
+
+</FrameLayout>

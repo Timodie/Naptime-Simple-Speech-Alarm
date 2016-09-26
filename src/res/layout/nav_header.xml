@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@drawable/menub"
+    android:padding="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/wicon"
+            android:layout_gravity="right"
+            android:layout_above="@+id/textView6"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/temper"
+            android:layout_gravity="right"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=""
+            android:id="@+id/currtemper"
+            android:gravity="right"
+            android:layout_marginBottom="3dp"
+            android:layout_above="@+id/temper"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:id="@+id/condition"
+            android:layout_marginRight="3dp"
+            android:layout_alignBottom="@+id/wicon"
+            android:layout_toLeftOf="@+id/wicon"
+            android:layout_toStartOf="@+id/wicon" />
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/refresh"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/currtemper"
+            android:layout_toStartOf="@+id/currtemper" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=""
+            android:id="@+id/place"
+            android:layout_above="@+id/wicon"
+            android:layout_alignRight="@+id/currtemper"
+            android:layout_alignEnd="@+id/currtemper" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
